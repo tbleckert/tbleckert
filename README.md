@@ -4,4 +4,4 @@
 🚀 &nbsp;&nbsp; Maintaining [react-select-search](https://github.com/tbleckert/react-select-search), a tiny lightweight React select component.  
 ✉️ &nbsp;&nbsp; CTO at [Minutemailer](https://minutemailer.com). 
 
-<a href="https://github.com/nunomaduro"><img alt="Git Stats" src="https://github-readme-stats.vercel.app/api?username=tbleckert&show_icons=true" /></a>
+<a href="https://github.com/tbleckert"><img alt="Git Stats" src="https://github-readme-stats.vercel.app/api?username=tbleckert&show_icons=true" /></a>
