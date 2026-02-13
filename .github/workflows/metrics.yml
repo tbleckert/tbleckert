@@ -39,7 +39,7 @@ jobs:
           user: tbleckert
           template: classic
           base: header
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Stockholm
   lines:
     runs-on: ubuntu-latest
     steps:
@@ -66,7 +66,7 @@ jobs:
           user: tbleckert
           template: classic
           base: activity, community
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Stockholm
 
   iso_calender:
     runs-on: ubuntu-latest
@@ -83,7 +83,7 @@ jobs:
           user: tbleckert
           template: classic
           base: ""
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Stockholm
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
@@ -95,14 +95,15 @@ jobs:
           filename: github-habits.svg
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
+          config_timezone: Europe/Stockholm # Set timezone
           user: tbleckert
           base: ""
           template: classic
           plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
           plugin_habits_from: 200       # Use 200 events to compute habits
           plugin_habits_days: 14        # Keep only events from last 14 days
-          plugin_habits_charts: yes     # Display charts section
           plugin_habits_trim: yes       # Trim unused hours on daily chart
 
   issue_pr_lang:
@@ -140,4 +141,4 @@ jobs:
           user: tbleckert
           template: classic
           base: repositories
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Stockholm
