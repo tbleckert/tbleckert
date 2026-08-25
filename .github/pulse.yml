@@ -1,0 +1,54 @@
+name: Developer Pulse
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # 05:17 Stockholm during summer.
+    # Exact local time isn't important here.
+    - cron: "17 3 * * *"
+
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/profile.mjs
+      - .github/workflows/pulse.yml
+
+permissions:
+  contents: write
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate profile
+        run: node scripts/profile.mjs
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_SECRET }}
+          PROFILE_USER: tbleckert
+          PROFILE_TIMEZONE: Europe/Stockholm
+
+      - name: Commit generated profile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile.svg stats.json
+
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+            exit 0
+          fi
+
+          git commit -m "chore: refresh developer pulse"
+          git push
