@@ -2,7 +2,8 @@ import { writeFile } from 'node:fs/promises';
 
 const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const user = process.env.PROFILE_USER || 'tbleckert';
-const timezone = process.env.PROFILE_TIMEZONE || 'Europe/Stockholm';
+const timezone =
+  process.env.PROFILE_TIMEZONE || 'Europe/Stockholm';
 
 if (!token) {
   throw new Error('Missing GH_TOKEN/GITHUB_TOKEN');
@@ -27,26 +28,36 @@ const iso = date => date.toISOString();
 const dateOnly = date => date.toISOString().slice(0, 10);
 
 async function graphql(query, variables) {
-  const response = await fetch('https://api.github.com/graphql', {
-    method: 'POST',
-    headers: {
-      authorization: `bearer ${token}`,
-      'content-type': 'application/json',
-      'user-agent': 'tbleckert-developer-pulse',
+  const response = await fetch(
+    'https://api.github.com/graphql',
+    {
+      method: 'POST',
+      headers: {
+        authorization: `bearer ${token}`,
+        'content-type': 'application/json',
+        'user-agent':
+          'tbleckert-developer-pulse',
+      },
+      body: JSON.stringify({
+        query,
+        variables,
+      }),
     },
-    body: JSON.stringify({ query, variables }),
-  });
+  );
 
   if (!response.ok) {
     throw new Error(
-      `GitHub GraphQL returned ${response.status}: ${await response.text()}`,
+      `GitHub GraphQL returned ${response.status}: ` +
+        `${await response.text()}`,
     );
   }
 
   const json = await response.json();
 
   if (json.errors) {
-    throw new Error(JSON.stringify(json.errors, null, 2));
+    throw new Error(
+      JSON.stringify(json.errors, null, 2),
+    );
   }
 
   return json.data;
@@ -62,7 +73,10 @@ query ProfilePulse(
   $to: DateTime!
 ) {
   user(login: $login) {
-    current: contributionsCollection(from: $from30, to: $to) {
+    current: contributionsCollection(
+      from: $from30
+      to: $to
+    ) {
       contributionCalendar {
         totalContributions
 
@@ -75,7 +89,9 @@ query ProfilePulse(
         }
       }
 
-      commitContributionsByRepository(maxRepositories: 100) {
+      commitContributionsByRepository(
+        maxRepositories: 100
+      ) {
         contributions {
           totalCount
         }
@@ -96,7 +112,9 @@ query ProfilePulse(
       from: $from120
       to: $previousEnd
     ) {
-      commitContributionsByRepository(maxRepositories: 100) {
+      commitContributionsByRepository(
+        maxRepositories: 100
+      ) {
         contributions {
           totalCount
         }
@@ -113,7 +131,10 @@ query ProfilePulse(
       }
     }
 
-    year: contributionsCollection(from: $from365, to: $to) {
+    year: contributionsCollection(
+      from: $from365
+      to: $to
+    ) {
       contributionCalendar {
         totalContributions
 
@@ -140,25 +161,31 @@ const data = await graphql(query, {
 });
 
 if (!data.user) {
-  throw new Error(`GitHub user "${user}" not found`);
+  throw new Error(
+    `GitHub user "${user}" not found`,
+  );
 }
 
 /**
- * Contribution data doesn't include commit timestamps, so use
- * commit search to build the "when I code" section.
+ * Contribution data doesn't include commit timestamps.
+ *
+ * Commit Search is therefore only used for the
+ * "when I code" section.
+ *
+ * Repo counts are NOT derived from this search.
  */
 async function searchRecentCommits() {
   const commits = [];
   const since = dateOnly(start30);
 
   for (let page = 1; page <= 5; page++) {
-    const query = encodeURIComponent(
+    const search = encodeURIComponent(
       `author:${user} author-date:>=${since}`,
     );
 
     const url =
       `https://api.github.com/search/commits` +
-      `?q=${query}` +
+      `?q=${search}` +
       `&sort=author-date` +
       `&order=desc` +
       `&per_page=100` +
@@ -167,16 +194,20 @@ async function searchRecentCommits() {
     const response = await fetch(url, {
       headers: {
         authorization: `bearer ${token}`,
-        accept: 'application/vnd.github+json',
-        'x-github-api-version': '2022-11-28',
-        'user-agent': 'tbleckert-developer-pulse',
+        accept:
+          'application/vnd.github+json',
+        'x-github-api-version':
+          '2022-11-28',
+        'user-agent':
+          'tbleckert-developer-pulse',
       },
     });
 
     if (!response.ok) {
       console.warn(
-        `Commit search unavailable (${response.status}). ` +
-        `Time-of-day insights will be omitted.`,
+        `Commit search unavailable ` +
+          `(${response.status}). ` +
+          `Time-of-day insights will be omitted.`,
       );
 
       return [];
@@ -196,34 +227,43 @@ async function searchRecentCommits() {
 
 const commits = await searchRecentCommits();
 
-const currentDays = data.user.current.contributionCalendar.weeks
-  .flatMap(week => week.contributionDays)
-  .filter(
-    day =>
-      day.date >= dateOnly(start30) &&
-      day.date <= dateOnly(now),
-  );
+const currentDays =
+  data.user.current.contributionCalendar.weeks
+    .flatMap(
+      week => week.contributionDays,
+    )
+    .filter(
+      day =>
+        day.date >= dateOnly(start30) &&
+        day.date <= dateOnly(now),
+    );
 
-const yearDays = data.user.year.contributionCalendar.weeks
-  .flatMap(week => week.contributionDays)
-  .filter(
-    day =>
-      day.date >= dateOnly(start365) &&
-      day.date <= dateOnly(now),
-  );
+const yearDays =
+  data.user.year.contributionCalendar.weeks
+    .flatMap(
+      week => week.contributionDays,
+    )
+    .filter(
+      day =>
+        day.date >= dateOnly(start365) &&
+        day.date <= dateOnly(now),
+    );
 
 const activeDays = currentDays.filter(
   day => day.contributionCount > 0,
 ).length;
 
 function calculateStreak(days) {
-  const sorted = [...days].sort((a, b) =>
-    a.date.localeCompare(b.date),
+  const sorted = [...days].sort(
+    (a, b) => a.date.localeCompare(b.date),
   );
 
   let index = sorted.length - 1;
 
-  // A zero-contribution "today" shouldn't immediately kill yesterday's streak.
+  /**
+   * A zero-contribution "today" shouldn't kill
+   * yesterday's streak while the day is still ongoing.
+   */
   if (
     index >= 0 &&
     sorted[index].date === dateOnly(now) &&
@@ -259,7 +299,8 @@ function weekdayStats(days) {
   const counts = Array(7).fill(0);
 
   for (const day of days) {
-    counts[day.weekday] += day.contributionCount;
+    counts[day.weekday] +=
+      day.contributionCount;
   }
 
   const highest = Math.max(...counts);
@@ -276,27 +317,40 @@ function languageStats(entries) {
   const languages = new Map();
 
   for (const item of entries) {
-    const language = item.repository.primaryLanguage;
+    const language =
+      item.repository.primaryLanguage;
 
-    if (!language) continue;
+    if (!language) {
+      continue;
+    }
 
-    const current = languages.get(language.name) || {
-      name: language.name,
-      color: language.color,
-      count: 0,
-    };
+    const current =
+      languages.get(language.name) || {
+        name: language.name,
+        color: language.color,
+        count: 0,
+      };
 
-    current.count += item.contributions.totalCount;
+    current.count +=
+      item.contributions.totalCount;
 
-    languages.set(language.name, current);
+    languages.set(
+      language.name,
+      current,
+    );
   }
 
-  const rows = [...languages.values()].sort(
+  const rows = [
+    ...languages.values(),
+  ].sort(
     (a, b) => b.count - a.count,
   );
 
   const total =
-    rows.reduce((sum, row) => sum + row.count, 0) || 1;
+    rows.reduce(
+      (sum, row) => sum + row.count,
+      0,
+    ) || 1;
 
   return rows.map(row => ({
     ...row,
@@ -305,12 +359,15 @@ function languageStats(entries) {
 }
 
 const languages = languageStats(
-  data.user.current.commitContributionsByRepository,
+  data.user.current
+    .commitContributionsByRepository,
 );
 
-const previousLanguages = languageStats(
-  data.user.previous.commitContributionsByRepository,
-);
+const previousLanguages =
+  languageStats(
+    data.user.previous
+      .commitContributionsByRepository,
+  );
 
 const previousShares = new Map(
   previousLanguages.map(language => [
@@ -323,20 +380,57 @@ const obsession =
   languages
     .map(language => ({
       ...language,
+
       previousShare:
-        previousShares.get(language.name) || 0,
+        previousShares.get(
+          language.name,
+        ) || 0,
+
       delta:
         language.share -
-        (previousShares.get(language.name) || 0),
+        (previousShares.get(
+          language.name,
+        ) || 0),
     }))
     .filter(
       language =>
         language.count >= 3 &&
         language.share >= 0.08,
     )
-    .sort((a, b) => b.delta - a.delta)[0] ||
+    .sort(
+      (a, b) => b.delta - a.delta,
+    )[0] ||
   languages[0] ||
   null;
+
+/**
+ * Repo statistics.
+ *
+ * IMPORTANT:
+ * These come from GraphQL contribution data,
+ * not Commit Search.
+ */
+const activeRepoEntries =
+  data.user.current
+    .commitContributionsByRepository
+    .filter(
+      item =>
+        item.contributions.totalCount >
+        0,
+    );
+
+const repositoryCount =
+  activeRepoEntries.length;
+
+const privateRepositoryCount =
+  activeRepoEntries.filter(
+    item => item.repository.isPrivate,
+  ).length;
+
+const publicRepositoryCount =
+  activeRepoEntries.filter(
+    item => !item.repository.isPrivate,
+  ).length;
 
 function localHour(date) {
   return Number(
@@ -355,15 +449,20 @@ for (const item of commits) {
     item.commit?.author?.date ||
     item.commit?.committer?.date;
 
-  if (!timestamp) continue;
+  if (!timestamp) {
+    continue;
+  }
 
-  hours[localHour(new Date(timestamp))]++;
+  hours[
+    localHour(new Date(timestamp))
+  ]++;
 }
 
-const totalHourlyCommits = hours.reduce(
-  (sum, count) => sum + count,
-  0,
-);
+const totalHourlyCommits =
+  hours.reduce(
+    (sum, count) => sum + count,
+    0,
+  );
 
 const periods = [
   {
@@ -371,16 +470,33 @@ const periods = [
     label: '06:00–12:00',
     hours: [6, 7, 8, 9, 10, 11],
   },
+
   {
     key: 'afternoon',
     label: '12:00–18:00',
-    hours: [12, 13, 14, 15, 16, 17],
+    hours: [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+    ],
   },
+
   {
     key: 'evening',
     label: '18:00–00:00',
-    hours: [18, 19, 20, 21, 22, 23],
+    hours: [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+    ],
   },
+
   {
     key: 'night',
     label: '00:00–06:00',
@@ -388,93 +504,106 @@ const periods = [
   },
 ].map(period => ({
   ...period,
+
   count: period.hours.reduce(
-    (sum, hour) => sum + hours[hour],
+    (sum, hour) =>
+      sum + hours[hour],
     0,
   ),
 }));
 
-const topPeriod = [...periods].sort(
+const topPeriod = [
+  ...periods,
+].sort(
   (a, b) => b.count - a.count,
 )[0];
 
-const periodPercent = totalHourlyCommits
-  ? Math.round(
-      (topPeriod.count / totalHourlyCommits) * 100,
-    )
-  : null;
+const periodPercent =
+  totalHourlyCommits
+    ? Math.round(
+        (topPeriod.count /
+          totalHourlyCommits) *
+          100,
+      )
+    : null;
 
-const topHourCount = Math.max(...hours);
-const topHour = topHourCount
-  ? hours.indexOf(topHourCount)
-  : null;
+const topHourCount =
+  Math.max(...hours);
 
-const weekday = weekdayStats(currentDays);
-const streak = calculateStreak(yearDays);
+const topHour =
+  topHourCount
+    ? hours.indexOf(topHourCount)
+    : null;
 
-const activeRepositories = new Set(
-  commits
-    .map(commit => commit.repository?.full_name)
-    .filter(Boolean),
-);
+const weekday =
+  weekdayStats(currentDays);
 
-const privateRepositories = new Set(
-  commits
-    .filter(commit => commit.repository?.private)
-    .map(commit => commit.repository.full_name),
-);
-
-const publicRepositories = new Set(
-  commits
-    .filter(
-      commit =>
-        commit.repository &&
-        !commit.repository.private,
-    )
-    .map(commit => commit.repository.full_name),
-);
+const streak =
+  calculateStreak(yearDays);
 
 function codingNarrative() {
   if (!totalHourlyCommits) {
     return {
-      title: 'I build when the work clicks.',
+      title:
+        'I build when the work clicks.',
+
       detail:
         'My coding rhythm updates here every day.',
     };
   }
 
   const titles = {
-    morning: 'I am a morning developer.',
-    afternoon: 'I do my best work in the afternoon.',
-    evening: 'I am an evening developer.',
-    night: 'I am a night owl.',
+    morning:
+      'I am a morning developer.',
+
+    afternoon:
+      'I do my best work in the afternoon.',
+
+    evening:
+      'I am an evening developer.',
+
+    night:
+      'I am a night owl.',
   };
 
   return {
     title: titles[topPeriod.key],
+
     detail:
-      `${periodPercent}% of my recent commits land ` +
-      `between ${topPeriod.label}.`,
+      `${periodPercent}% of my recent ` +
+      `commits land between ` +
+      `${topPeriod.label}.`,
   };
 }
 
-const narrative = codingNarrative();
+const narrative =
+  codingNarrative();
 
 const total30 =
-  data.user.current.contributionCalendar
+  data.user.current
+    .contributionCalendar
     .totalContributions;
 
-const topLanguages = languages.slice(0, 5);
+const topLanguages =
+  languages.slice(0, 5);
 
-const maxCurrentDay = Math.max(
-  1,
-  ...currentDays.map(day => day.contributionCount),
-);
+const maxCurrentDay =
+  Math.max(
+    1,
+    ...currentDays.map(
+      day =>
+        day.contributionCount,
+    ),
+  );
 
-const maxYearDay = Math.max(
-  1,
-  ...yearDays.map(day => day.contributionCount),
-);
+const maxYearDay =
+  Math.max(
+    1,
+    ...yearDays.map(
+      day =>
+        day.contributionCount,
+    ),
+  );
 
 const escapeXml = value =>
   String(value ?? '').replace(
@@ -493,7 +622,11 @@ const percentage = number =>
 
 const compact = number =>
   new Intl.NumberFormat('en', {
-    notation: number >= 1000 ? 'compact' : 'standard',
+    notation:
+      number >= 1000
+        ? 'compact'
+        : 'standard',
+
     maximumFractionDigits: 1,
   }).format(number);
 
@@ -504,21 +637,28 @@ function renderActivityBars() {
   const gap = 5;
 
   const barWidth =
-    (width - gap * (currentDays.length - 1)) /
+    (width -
+      gap *
+        (currentDays.length - 1)) /
     currentDays.length;
 
   return currentDays
     .map((day, index) => {
-      const height = day.contributionCount
-        ? 10 +
-          (day.contributionCount / maxCurrentDay) *
-            108
-        : 3;
+      const height =
+        day.contributionCount
+          ? 10 +
+            (day.contributionCount /
+              maxCurrentDay) *
+              108
+          : 3;
 
       const barX =
-        x + index * (barWidth + gap);
+        x +
+        index *
+          (barWidth + gap);
 
-      const barY = baseline - height;
+      const barY =
+        baseline - height;
 
       return `
         <rect
@@ -527,8 +667,15 @@ function renderActivityBars() {
           y="${barY.toFixed(1)}"
           width="${barWidth.toFixed(1)}"
           height="${height.toFixed(1)}"
-          rx="${Math.min(4, barWidth / 2).toFixed(1)}"
-          opacity="${day.contributionCount ? 0.95 : 0.16}"
+          rx="${Math.min(
+            4,
+            barWidth / 2,
+          ).toFixed(1)}"
+          opacity="${
+            day.contributionCount
+              ? 0.95
+              : 0.16
+          }"
         />
       `;
     })
@@ -538,79 +685,117 @@ function renderActivityBars() {
 function renderLanguages() {
   if (!topLanguages.length) {
     return `
-      <text class="muted small" x="74" y="780">
+      <text
+        class="muted small"
+        x="74"
+        y="780"
+      >
         Language data will appear after the next refresh.
       </text>
     `;
   }
 
   return topLanguages
-    .map((language, index) => {
-      const y = 770 + index * 62;
-      const barWidth = Math.max(
-        4,
-        480 * language.share,
-      );
+    .map(
+      (language, index) => {
+        const y =
+          770 + index * 62;
 
-      return `
-        <text class="label fg" x="74" y="${y}">
-          ${escapeXml(language.name)}
-        </text>
+        const barWidth =
+          Math.max(
+            4,
+            480 *
+              language.share,
+          );
 
-        <text
-          class="muted small"
-          x="554"
-          y="${y}"
-          text-anchor="end"
-        >
-          ${percentage(language.share)}
-        </text>
+        return `
+          <text
+            class="label fg"
+            x="74"
+            y="${y}"
+          >
+            ${escapeXml(
+              language.name,
+            )}
+          </text>
 
-        <rect
-          class="track"
-          x="74"
-          y="${y + 16}"
-          width="480"
-          height="8"
-          rx="4"
-        />
+          <text
+            class="muted small"
+            x="554"
+            y="${y}"
+            text-anchor="end"
+          >
+            ${percentage(
+              language.share,
+            )}
+          </text>
 
-        <rect
-          class="accent"
-          x="74"
-          y="${y + 16}"
-          width="${barWidth.toFixed(1)}"
-          height="8"
-          rx="4"
-        />
-      `;
-    })
+          <rect
+            class="track"
+            x="74"
+            y="${y + 16}"
+            width="480"
+            height="8"
+            rx="4"
+          />
+
+          <rect
+            class="accent"
+            x="74"
+            y="${y + 16}"
+            width="${barWidth.toFixed(
+              1,
+            )}"
+            height="8"
+            rx="4"
+          />
+        `;
+      },
+    )
     .join('');
 }
 
 function renderHeatmap() {
   const startX = 660;
   const startY = 790;
+
   const cell = 12;
   const gap = 5;
 
   const byDate = new Map(
-    yearDays.map(day => [day.date, day]),
+    yearDays.map(day => [
+      day.date,
+      day,
+    ]),
   );
 
-  const firstDate = new Date(
-    `${yearDays[0]?.date || dateOnly(start365)}T00:00:00Z`,
-  );
+  const firstDate =
+    new Date(
+      `${
+        yearDays[0]?.date ||
+        dateOnly(start365)
+      }T00:00:00Z`,
+    );
 
   firstDate.setUTCDate(
-    firstDate.getUTCDate() - firstDate.getUTCDay(),
+    firstDate.getUTCDate() -
+      firstDate.getUTCDay(),
   );
 
   const cells = [];
 
-  for (let week = 0; week < 53; week++) {
-    for (let day = 0; day < 7; day++) {
-      const current = new Date(firstDate);
+  for (
+    let week = 0;
+    week < 53;
+    week++
+  ) {
+    for (
+      let day = 0;
+      day < 7;
+      day++
+    ) {
+      const current =
+        new Date(firstDate);
 
       current.setUTCDate(
         firstDate.getUTCDate() +
@@ -618,29 +803,44 @@ function renderHeatmap() {
           day,
       );
 
-      const contribution = byDate.get(
-        dateOnly(current),
-      );
+      const contribution =
+        byDate.get(
+          dateOnly(current),
+        );
 
-      if (!contribution) continue;
+      if (!contribution) {
+        continue;
+      }
 
       const opacity =
-        contribution.contributionCount === 0
+        contribution
+          .contributionCount === 0
           ? 0.08
           : 0.25 +
             0.75 *
-              (contribution.contributionCount /
+              (contribution
+                .contributionCount /
                 maxYearDay);
 
       cells.push(`
         <rect
           class="heat"
-          x="${startX + week * (cell + gap)}"
-          y="${startY + day * (cell + gap)}"
+          x="${
+            startX +
+            week *
+              (cell + gap)
+          }"
+          y="${
+            startY +
+            day *
+              (cell + gap)
+          }"
           width="${cell}"
           height="${cell}"
           rx="3"
-          opacity="${opacity.toFixed(2)}"
+          opacity="${opacity.toFixed(
+            2,
+          )}"
         />
       `);
     }
@@ -649,38 +849,38 @@ function renderHeatmap() {
   return cells.join('');
 }
 
-const obsessionTitle = obsession
-  ? `I’m currently into ${obsession.name}.`
-  : 'I keep exploring.';
+const obsessionTitle =
+  obsession
+    ? `I’m currently into ${obsession.name}.`
+    : 'I keep exploring.';
 
-const obsessionDetail = obsession
-  ? obsession.previousShare > 0
-    ? `${percentage(
-        obsession.share,
-      )} of my recent commit activity is in ${
-        obsession.name
-      }, ${
-        obsession.delta >= 0 ? 'up' : 'down'
-      } ${Math.abs(
-        Math.round(obsession.delta * 100),
-      )} pts.`
-    : `${percentage(
-        obsession.share,
-      )} of my recent commit activity is in ${
-        obsession.name
-      }.`
-  : 'My language mix will show up here as I build.';
+const obsessionDetail =
+  obsession
+    ? obsession.previousShare > 0
+      ? `${percentage(
+          obsession.share,
+        )} of my recent commit activity ` +
+        `is in ${obsession.name}, ` +
+        `${
+          obsession.delta >= 0
+            ? 'up'
+            : 'down'
+        } ` +
+        `${Math.abs(
+          Math.round(
+            obsession.delta * 100,
+          ),
+        )} pts.`
+      : `${percentage(
+          obsession.share,
+        )} of my recent commit activity ` +
+        `is in ${obsession.name}.`
+    : 'My language mix will show up here as I build.';
 
-const repositoryCount =
-  activeRepositories.size ||
-  data.user.current
-    .commitContributionsByRepository.length;
-
-const repositoryDetail = activeRepositories.size
-  ? `${activeRepositories.size} repositories active · ` +
-    `${privateRepositories.size} private · ` +
-    `${publicRepositories.size} public`
-  : `${repositoryCount} repositories with commits`;
+const repositoryDetail =
+  `${repositoryCount} repositories active · ` +
+  `${privateRepositoryCount} private · ` +
+  `${publicRepositoryCount} public`;
 
 const busiestHourDetail =
   topHour !== null
@@ -712,11 +912,25 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
       color-scheme: light dark;
     }
 
-    .bg { fill: #ffffff; }
-    .fg { fill: #111318; }
-    .muted { fill: #667085; }
-    .line { stroke: #e7e9ee; }
-    .track { fill: #eef0f4; }
+    .bg {
+      fill: #ffffff;
+    }
+
+    .fg {
+      fill: #111318;
+    }
+
+    .muted {
+      fill: #667085;
+    }
+
+    .line {
+      stroke: #e7e9ee;
+    }
+
+    .track {
+      fill: #eef0f4;
+    }
 
     .accent,
     .bar,
@@ -780,12 +994,28 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
       font-size: 13px;
     }
 
-    @media (prefers-color-scheme: dark) {
-      .bg { fill: #0d1117; }
-      .fg { fill: #f0f3f6; }
-      .muted { fill: #8b949e; }
-      .line { stroke: #2a3038; }
-      .track { fill: #21262d; }
+    @media (
+      prefers-color-scheme: dark
+    ) {
+      .bg {
+        fill: #0d1117;
+      }
+
+      .fg {
+        fill: #f0f3f6;
+      }
+
+      .muted {
+        fill: #8b949e;
+      }
+
+      .line {
+        stroke: #2a3038;
+      }
+
+      .track {
+        fill: #21262d;
+      }
 
       .accent,
       .bar,
@@ -965,7 +1195,8 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     y="936"
   >
     ${compact(
-      data.user.year.contributionCalendar
+      data.user.year
+        .contributionCalendar
         .totalContributions,
     )} contributions over the last 12 months
   </text>
@@ -991,7 +1222,9 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     x="74"
     y="1122"
   >
-    ${escapeXml(narrative.title)}
+    ${escapeXml(
+      narrative.title,
+    )}
   </text>
 
   <text
@@ -1010,7 +1243,9 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     x="74"
     y="1218"
   >
-    ${escapeXml(obsessionTitle)}
+    ${escapeXml(
+      obsessionTitle,
+    )}
   </text>
 
   <text
@@ -1018,7 +1253,9 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     x="74"
     y="1249"
   >
-    ${escapeXml(obsessionDetail)}
+    ${escapeXml(
+      obsessionDetail,
+    )}
   </text>
 
   <text
@@ -1036,12 +1273,16 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
     x="74"
     y="1345"
   >
-    ${escapeXml(repositoryDetail)} · refreshed daily from GitHub
+    ${escapeXml(
+      repositoryDetail,
+    )} · refreshed daily from GitHub
   </text>
 </svg>`;
 
 const stats = {
-  generatedAt: now.toISOString(),
+  generatedAt:
+    now.toISOString(),
+
   user,
   timezone,
 
@@ -1049,57 +1290,94 @@ const stats = {
     contributions: total30,
     activeDays,
     streak,
+
     activeRepositories:
-      activeRepositories.size,
+      repositoryCount,
+
     privateRepositories:
-      privateRepositories.size,
+      privateRepositoryCount,
+
     publicRepositories:
-      publicRepositories.size,
+      publicRepositoryCount,
   },
 
   rhythm: {
-    topPeriod: topPeriod?.key || null,
+    topPeriod:
+      topPeriod?.key || null,
+
     periodPercent,
     topHour,
-    weekday: weekday.name,
-    searchedCommits: commits.length,
+
+    weekday:
+      weekday.name,
+
+    searchedCommits:
+      commits.length,
   },
 
-  languages: languages.map(
-    ({ name, count, share }) => ({
-      name,
-      count,
-      share: Number(share.toFixed(4)),
-    }),
-  ),
+  languages:
+    languages.map(
+      ({
+        name,
+        count,
+        share,
+      }) => ({
+        name,
+        count,
 
-  obsession: obsession
-    ? {
-        language: obsession.name,
         share: Number(
-          obsession.share.toFixed(4),
+          share.toFixed(4),
         ),
-        previousShare: Number(
-          obsession.previousShare.toFixed(4),
-        ),
-        delta: Number(
-          obsession.delta.toFixed(4),
-        ),
-      }
-    : null,
+      }),
+    ),
+
+  obsession:
+    obsession
+      ? {
+          language:
+            obsession.name,
+
+          share: Number(
+            obsession.share.toFixed(
+              4,
+            ),
+          ),
+
+          previousShare: Number(
+            obsession.previousShare.toFixed(
+              4,
+            ),
+          ),
+
+          delta: Number(
+            obsession.delta.toFixed(
+              4,
+            ),
+          ),
+        }
+      : null,
 
   year: {
     contributions:
-      data.user.year.contributionCalendar
+      data.user.year
+        .contributionCalendar
         .totalContributions,
   },
 };
 
 await Promise.all([
-  writeFile('profile.svg', svg),
+  writeFile(
+    'profile.svg',
+    svg,
+  ),
+
   writeFile(
     'stats.json',
-    JSON.stringify(stats, null, 2) + '\n',
+    JSON.stringify(
+      stats,
+      null,
+      2,
+    ) + '\n',
   ),
 ]);
 
@@ -1107,5 +1385,8 @@ console.log(
   `Generated Developer Pulse for ${user}: ` +
     `${total30} contributions, ` +
     `${activeDays} active days, ` +
+    `${repositoryCount} repositories ` +
+    `(${privateRepositoryCount} private, ` +
+    `${publicRepositoryCount} public), ` +
     `${commits.length} commits sampled.`,
 );
