@@ -21,11 +21,25 @@
       color-scheme: light dark;
     }
 
-    .bg { fill: #ffffff; }
-    .fg { fill: #111318; }
-    .muted { fill: #667085; }
-    .line { stroke: #e7e9ee; }
-    .track { fill: #eef0f4; }
+    .bg {
+      fill: #ffffff;
+    }
+
+    .fg {
+      fill: #111318;
+    }
+
+    .muted {
+      fill: #667085;
+    }
+
+    .line {
+      stroke: #e7e9ee;
+    }
+
+    .track {
+      fill: #eef0f4;
+    }
 
     .accent,
     .bar,
@@ -89,12 +103,28 @@
       font-size: 13px;
     }
 
-    @media (prefers-color-scheme: dark) {
-      .bg { fill: #0d1117; }
-      .fg { fill: #f0f3f6; }
-      .muted { fill: #8b949e; }
-      .line { stroke: #2a3038; }
-      .track { fill: #21262d; }
+    @media (
+      prefers-color-scheme: dark
+    ) {
+      .bg {
+        fill: #0d1117;
+      }
+
+      .fg {
+        fill: #f0f3f6;
+      }
+
+      .muted {
+        fill: #8b949e;
+      }
+
+      .line {
+        stroke: #2a3038;
+      }
+
+      .track {
+        fill: #21262d;
+      }
 
       .accent,
       .bar,
@@ -156,7 +186,7 @@
     x="74"
     y="365"
   >
-    256
+    258
   </text>
 
   <text
@@ -509,9 +539,9 @@
         <rect
           class="bar"
           x="1095.8"
-          y="567.1"
+          y="562.7"
           width="30.2"
-          height="40.9"
+          height="45.3"
           rx="4.0"
           opacity="0.95"
         />
@@ -551,99 +581,111 @@
   </text>
 
   
-        <text class="label fg" x="74" y="770">
-          TypeScript
-        </text>
+          <text
+            class="label fg"
+            x="74"
+            y="770"
+          >
+            TypeScript
+          </text>
 
-        <text
-          class="muted small"
-          x="554"
-          y="770"
-          text-anchor="end"
-        >
-          63%
-        </text>
+          <text
+            class="muted small"
+            x="554"
+            y="770"
+            text-anchor="end"
+          >
+            59%
+          </text>
 
-        <rect
-          class="track"
-          x="74"
-          y="786"
-          width="480"
-          height="8"
-          rx="4"
-        />
+          <rect
+            class="track"
+            x="74"
+            y="786"
+            width="480"
+            height="8"
+            rx="4"
+          />
 
-        <rect
-          class="accent"
-          x="74"
-          y="786"
-          width="300.0"
-          height="8"
-          rx="4"
-        />
-      
-        <text class="label fg" x="74" y="832">
-          JavaScript
-        </text>
+          <rect
+            class="accent"
+            x="74"
+            y="786"
+            width="282.4"
+            height="8"
+            rx="4"
+          />
+        
+          <text
+            class="label fg"
+            x="74"
+            y="832"
+          >
+            JavaScript
+          </text>
 
-        <text
-          class="muted small"
-          x="554"
-          y="832"
-          text-anchor="end"
-        >
-          25%
-        </text>
+          <text
+            class="muted small"
+            x="554"
+            y="832"
+            text-anchor="end"
+          >
+            29%
+          </text>
 
-        <rect
-          class="track"
-          x="74"
-          y="848"
-          width="480"
-          height="8"
-          rx="4"
-        />
+          <rect
+            class="track"
+            x="74"
+            y="848"
+            width="480"
+            height="8"
+            rx="4"
+          />
 
-        <rect
-          class="accent"
-          x="74"
-          y="848"
-          width="120.0"
-          height="8"
-          rx="4"
-        />
-      
-        <text class="label fg" x="74" y="894">
-          PHP
-        </text>
+          <rect
+            class="accent"
+            x="74"
+            y="848"
+            width="141.2"
+            height="8"
+            rx="4"
+          />
+        
+          <text
+            class="label fg"
+            x="74"
+            y="894"
+          >
+            PHP
+          </text>
 
-        <text
-          class="muted small"
-          x="554"
-          y="894"
-          text-anchor="end"
-        >
-          13%
-        </text>
+          <text
+            class="muted small"
+            x="554"
+            y="894"
+            text-anchor="end"
+          >
+            12%
+          </text>
 
-        <rect
-          class="track"
-          x="74"
-          y="910"
-          width="480"
-          height="8"
-          rx="4"
-        />
+          <rect
+            class="track"
+            x="74"
+            y="910"
+            width="480"
+            height="8"
+            rx="4"
+          />
 
-        <rect
-          class="accent"
-          x="74"
-          y="910"
-          width="60.0"
-          height="8"
-          rx="4"
-        />
-      
+          <rect
+            class="accent"
+            x="74"
+            y="910"
+            width="56.5"
+            height="8"
+            rx="4"
+          />
+        
 
   <text
     class="muted kicker"
@@ -4301,7 +4343,7 @@
           width="12"
           height="12"
           rx="3"
-          opacity="0.40"
+          opacity="0.42"
         />
       
 
@@ -4342,7 +4384,7 @@
     x="74"
     y="1153"
   >
-    73% of my recent commits land between 18:00–00:00. My busiest hour is around 20:00.
+    75% of my recent commits land between 18:00–00:00. My busiest hour is around 20:00.
   </text>
 
   <text
@@ -4358,7 +4400,7 @@
     x="74"
     y="1249"
   >
-    25% of my recent commit activity is in JavaScript.
+    29% of my recent commit activity is in JavaScript.
   </text>
 
   <text
