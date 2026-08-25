@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-08-25T20:32:28.158Z",
+  "user": "tbleckert",
+  "timezone": "Europe/Stockholm",
+  "last30Days": {
+    "contributions": 256,
+    "activeDays": 19,
+    "streak": 16,
+    "activeRepositories": 4,
+    "privateRepositories": 0,
+    "publicRepositories": 4
+  },
+  "rhythm": {
+    "topPeriod": "evening",
+    "periodPercent": 73,
+    "topHour": 20,
+    "weekday": "Saturday",
+    "searchedCommits": 15
+  },
+  "languages": [
+    {
+      "name": "TypeScript",
+      "count": 10,
+      "share": 0.625
+    },
+    {
+      "name": "JavaScript",
+      "count": 4,
+      "share": 0.25
+    },
+    {
+      "name": "PHP",
+      "count": 2,
+      "share": 0.125
+    }
+  ],
+  "obsession": {
+    "language": "JavaScript",
+    "share": 0.25,
+    "previousShare": 0,
+    "delta": 0.25
+  },
+  "year": {
+    "contributions": 3758
+  }
+}
