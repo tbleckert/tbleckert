@@ -8,14 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-08-26"
-  data-issue-edition="2"
+  data-issue-edition="3"
+  data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 026.2
+    Tobias Bleckert — Il Codice Sportivo, issue 026.3, dark edition
   </title>
 
   <desc id="desc">
-    A pink sporting-paper profile showing 262 contributions, 19 active days, a 17-day streak, and 16 active projects.
+    A pink sporting-paper profile showing 265 contributions, 19 active days, a 17-day streak, and 16 active projects.
   </desc>
 
   <style>
@@ -27,36 +28,36 @@
         Helvetica,
         Arial,
         sans-serif;
-      fill: #221f1f;
+      fill: #f0f6fc;
     }
 
     .paper {
-      fill: #efb9bd;
+      fill: #0d1117;
     }
 
     .crease {
-      stroke: #51272c;
+      stroke: #30363d;
       stroke-width: 2;
-      opacity: 0.07;
+      opacity: 0.35;
     }
 
     .rule {
-      stroke: #7e2934;
+      stroke: #8c959f;
       stroke-width: 3;
     }
 
     .fine-rule {
-      stroke: #995861;
+      stroke: #30363d;
       stroke-width: 1;
     }
 
     .heavy-rule {
-      stroke: #7e2934;
+      stroke: #8c959f;
       stroke-width: 7;
     }
 
     .bar {
-      fill: #7e2934;
+      fill: #f0f6fc;
     }
 
     .topline,
@@ -117,7 +118,7 @@
     }
 
     .squad-number {
-      fill: #7e2934;
+      fill: #f0f6fc;
       font-size: 20px;
     }
 
@@ -168,7 +169,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 026.2 · MIDDAY EDITION · 15:14
+    ISSUE 026.3 · MIDDAY EDITION · 15:19
   </text>
 
   <text
@@ -493,9 +494,9 @@
         <rect
           class="bar"
           x="755.9"
-          y="793.6"
+          y="779.1"
           width="18.1"
-          height="28.4"
+          height="42.9"
           opacity="0.95"
         />
 
@@ -535,7 +536,7 @@
   </text>
 
   <text class="score-main" x="835" y="407">
-    262
+    265
   </text>
 
   <line class="fine-rule" x1="835" y1="438" x2="1142" y2="438" />
@@ -601,7 +602,7 @@
               x="58"
               dy="0"
             >
-              50% of recent commits arrive in
+              49% of recent commits arrive in
             </tspan>
 
             <tspan
@@ -793,10 +794,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    026.2
+    026.3
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    SECOND EDITION OF THE DAY
+    THIRD EDITION OF THE DAY
   </text>
 </svg>
