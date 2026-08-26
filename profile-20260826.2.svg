@@ -8,10 +8,10 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-08-26"
-  data-issue-edition="1"
+  data-issue-edition="2"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 026.1
+    Tobias Bleckert — Il Codice Sportivo, issue 026.2
   </title>
 
   <desc id="desc">
@@ -168,7 +168,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 026.1 · MIDDAY EDITION · 15:04
+    ISSUE 026.2 · MIDDAY EDITION · 15:14
   </text>
 
   <text
@@ -601,7 +601,7 @@
               x="58"
               dy="0"
             >
-              51% of recent commits arrive in
+              50% of recent commits arrive in
             </tspan>
 
             <tspan
@@ -793,10 +793,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    026.1
+    026.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
