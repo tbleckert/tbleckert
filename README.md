@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://github.com/tbleckert">
     <img
-      alt="Tobias Bleckert — Developer Pulse"
+      alt="Tobias Bleckert — Il Codice Sportivo"
       src="./profile.svg"
       width="100%"
     />
