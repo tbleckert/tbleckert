@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-08-26"
-  data-issue-edition="8"
+  data-issue-edition="9"
   data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 026.8, dark edition
+    Tobias Bleckert — Il Codice Sportivo, issue 026.9, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 276 contributions against 210.0 xC, 19 active days, a 17-day streak, recent form, and 16 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 281 contributions against 210.0 xC, 19 active days, a 17-day streak, recent form, and 16 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 026.8 · LATE EDITION · 21:34
+    ISSUE 026.9 · LATE EDITION · 22:51
   </text>
 
   <text
@@ -534,9 +534,9 @@
         <rect
           class="bar"
           x="508.5"
-          y="726.1"
+          y="702.0"
           width="9.5"
-          height="95.9"
+          height="120.0"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    276
+    281
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    31% ABOVE XC
+    34% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -780,7 +780,7 @@
               x="58"
               dy="0"
             >
-              48% of recent commits arrive in
+              49% of recent commits arrive in
             </tspan>
 
             <tspan
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 73%
+          CAPTAIN · IN FORM · 74%
         </text>
 
         <line
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    026.8
+    026.9
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    EDITION 8 OF THE DAY
+    EDITION 9 OF THE DAY
   </text>
 </svg>
