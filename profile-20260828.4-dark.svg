@@ -8,11 +8,11 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-08-28"
-  data-issue-edition="3"
-  data-theme="light"
+  data-issue-edition="4"
+  data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 028.3, light edition
+    Tobias Bleckert — Il Codice Sportivo, issue 028.4, dark edition
   </title>
 
   <desc id="desc">
@@ -28,53 +28,53 @@
         Helvetica,
         Arial,
         sans-serif;
-      fill: #1f2328;
+      fill: #f0f6fc;
     }
 
     .paper {
-      fill: #ffffff;
+      fill: #0d1117;
     }
 
     .crease {
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 2;
       opacity: 0.35;
     }
 
     .rule {
-      stroke: #57606a;
+      stroke: #8c959f;
       stroke-width: 3;
     }
 
     .fine-rule {
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 1;
     }
 
     .heavy-rule {
-      stroke: #57606a;
+      stroke: #8c959f;
       stroke-width: 7;
     }
 
     .bar {
-      fill: #1f2328;
+      fill: #f0f6fc;
     }
 
     .form-win {
-      fill: #1f2328;
-      stroke: #1f2328;
+      fill: #f0f6fc;
+      stroke: #f0f6fc;
       stroke-width: 2;
     }
 
     .form-draw {
       fill: none;
-      stroke: #1f2328;
+      stroke: #f0f6fc;
       stroke-width: 2;
     }
 
     .form-loss {
       fill: none;
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 2;
     }
 
@@ -141,7 +141,7 @@
     }
 
     .form-letter-win {
-      fill: #ffffff;
+      fill: #0d1117;
     }
 
     .column-title {
@@ -151,7 +151,7 @@
     }
 
     .squad-number {
-      fill: #1f2328;
+      fill: #f0f6fc;
       font-size: 20px;
     }
 
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 028.3 · LATE EDITION · 22:14
+    ISSUE 028.4 · LATE EDITION · 23:01
   </text>
 
   <text
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    028.3
+    028.4
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    THIRD EDITION OF THE DAY
+    FOURTH EDITION OF THE DAY
   </text>
 </svg>
