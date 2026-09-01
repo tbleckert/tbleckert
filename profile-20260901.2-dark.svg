@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-09-01"
-  data-issue-edition="1"
-  data-theme="light"
+  data-issue-edition="2"
+  data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 001.1, light edition
+    Tobias Bleckert — Il Codice Sportivo, issue 001.2, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 327 contributions against 227.0 xC, 23 active days, a 23-day streak, recent form, and 16 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 334 contributions against 227.0 xC, 23 active days, a 23-day streak, recent form, and 16 active projects.
   </desc>
 
   <style>
@@ -28,53 +28,53 @@
         Helvetica,
         Arial,
         sans-serif;
-      fill: #1f2328;
+      fill: #f0f6fc;
     }
 
     .paper {
-      fill: #ffffff;
+      fill: #0d1117;
     }
 
     .crease {
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 2;
       opacity: 0.35;
     }
 
     .rule {
-      stroke: #57606a;
+      stroke: #8c959f;
       stroke-width: 3;
     }
 
     .fine-rule {
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 1;
     }
 
     .heavy-rule {
-      stroke: #57606a;
+      stroke: #8c959f;
       stroke-width: 7;
     }
 
     .bar {
-      fill: #1f2328;
+      fill: #f0f6fc;
     }
 
     .form-win {
-      fill: #1f2328;
-      stroke: #1f2328;
+      fill: #f0f6fc;
+      stroke: #f0f6fc;
       stroke-width: 2;
     }
 
     .form-draw {
       fill: none;
-      stroke: #1f2328;
+      stroke: #f0f6fc;
       stroke-width: 2;
     }
 
     .form-loss {
       fill: none;
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 2;
     }
 
@@ -141,7 +141,7 @@
     }
 
     .form-letter-win {
-      fill: #ffffff;
+      fill: #0d1117;
     }
 
     .column-title {
@@ -151,7 +151,7 @@
     }
 
     .squad-number {
-      fill: #1f2328;
+      fill: #f0f6fc;
       font-size: 20px;
     }
 
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 001.1 · MORNING EDITION · 10:18
+    ISSUE 001.2 · MIDDAY EDITION · 14:02
   </text>
 
   <text
@@ -246,7 +246,7 @@
               x="58"
               dy="0"
             >
-              23 days unbeaten. TypeScript controls the
+              23 days unbeaten. Swift controls the
             </tspan>
 
             <tspan
@@ -471,9 +471,9 @@
         <rect
           class="bar"
           x="399.7"
-          y="661.5"
+          y="637.1"
           width="9.5"
-          height="160.5"
+          height="184.9"
           opacity="0.95"
         />
 
@@ -516,9 +516,9 @@
         <rect
           class="bar"
           x="477.4"
-          y="694.1"
+          y="685.9"
           width="9.5"
-          height="127.9"
+          height="136.1"
           opacity="0.95"
         />
 
@@ -534,9 +534,9 @@
         <rect
           class="bar"
           x="508.5"
-          y="783.6"
+          y="759.2"
           width="9.5"
-          height="38.4"
+          height="62.8"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    327
+    334
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    44% ABOVE XC
+    47% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 80%
+          CAPTAIN · IN FORM · 58%
         </text>
 
         <line
@@ -857,7 +857,7 @@
           x="486"
           y="1112"
         >
-          TypeScript
+          Swift
         </text>
 
         <text
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          RISING · 18%
+          RISING · 22%
         </text>
 
         <line
@@ -889,7 +889,7 @@
           x="486"
           y="1206"
         >
-          Astro
+          TypeScript
         </text>
 
         <text
@@ -897,7 +897,7 @@
           x="486"
           y="1231"
         >
-          STEADY · 1%
+          RISING · 18%
         </text>
 
   </g>
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    001.1
+    001.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
