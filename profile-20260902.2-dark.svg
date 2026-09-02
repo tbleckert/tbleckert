@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-09-02"
-  data-issue-edition="1"
-  data-theme="light"
+  data-issue-edition="2"
+  data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 002.1, light edition
+    Tobias Bleckert — Il Codice Sportivo, issue 002.2, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 345 contributions against 218.0 xC, 24 active days, a 24-day streak, recent form, and 17 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 350 contributions against 218.0 xC, 24 active days, a 24-day streak, recent form, and 17 active projects.
   </desc>
 
   <style>
@@ -28,53 +28,53 @@
         Helvetica,
         Arial,
         sans-serif;
-      fill: #1f2328;
+      fill: #f0f6fc;
     }
 
     .paper {
-      fill: #ffffff;
+      fill: #0d1117;
     }
 
     .crease {
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 2;
       opacity: 0.35;
     }
 
     .rule {
-      stroke: #57606a;
+      stroke: #8c959f;
       stroke-width: 3;
     }
 
     .fine-rule {
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 1;
     }
 
     .heavy-rule {
-      stroke: #57606a;
+      stroke: #8c959f;
       stroke-width: 7;
     }
 
     .bar {
-      fill: #1f2328;
+      fill: #f0f6fc;
     }
 
     .form-win {
-      fill: #1f2328;
-      stroke: #1f2328;
+      fill: #f0f6fc;
+      stroke: #f0f6fc;
       stroke-width: 2;
     }
 
     .form-draw {
       fill: none;
-      stroke: #1f2328;
+      stroke: #f0f6fc;
       stroke-width: 2;
     }
 
     .form-loss {
       fill: none;
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 2;
     }
 
@@ -141,7 +141,7 @@
     }
 
     .form-letter-win {
-      fill: #ffffff;
+      fill: #0d1117;
     }
 
     .column-title {
@@ -151,7 +151,7 @@
     }
 
     .squad-number {
-      fill: #1f2328;
+      fill: #f0f6fc;
       font-size: 20px;
     }
 
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 002.1 · MIDDAY EDITION · 14:01
+    ISSUE 002.2 · LATE EDITION · 23:01
   </text>
 
   <text
@@ -534,9 +534,9 @@
         <rect
           class="bar"
           x="508.5"
-          y="759.2"
+          y="718.5"
           width="9.5"
-          height="62.8"
+          height="103.5"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    345
+    350
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    58% ABOVE XC
+    61% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 56%
+          CAPTAIN · IN FORM · 55%
         </text>
 
         <line
@@ -897,7 +897,7 @@
           x="486"
           y="1231"
         >
-          RISING · 20%
+          RISING · 21%
         </text>
 
   </g>
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    002.1
+    002.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
