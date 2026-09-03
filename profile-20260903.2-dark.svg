@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-09-03"
-  data-issue-edition="1"
+  data-issue-edition="2"
   data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 003.1, dark edition
+    Tobias Bleckert — Il Codice Sportivo, issue 003.2, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 384 contributions against 214.3 xC, 25 active days, a 25-day streak, recent form, and 17 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 394 contributions against 214.3 xC, 25 active days, a 25-day streak, recent form, and 17 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 003.1 · MIDDAY EDITION · 14:00
+    ISSUE 003.2 · LATE EDITION · 23:02
   </text>
 
   <text
@@ -318,225 +318,225 @@
         <rect
           class="bar"
           x="135.7"
-          y="726.6"
+          y="738.6"
           width="9.5"
-          height="95.4"
+          height="83.4"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="151.2"
-          y="669.7"
+          y="690.0"
           width="9.5"
-          height="152.3"
+          height="132.0"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="166.7"
-          y="775.4"
+          y="780.2"
           width="9.5"
-          height="46.6"
+          height="41.8"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="182.3"
-          y="718.5"
+          y="731.6"
           width="9.5"
-          height="103.5"
+          height="90.4"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="197.8"
-          y="677.8"
+          y="696.9"
           width="9.5"
-          height="144.2"
+          height="125.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="213.3"
-          y="775.4"
+          y="780.2"
           width="9.5"
-          height="46.6"
+          height="41.8"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="228.9"
-          y="799.9"
+          y="801.1"
           width="9.5"
-          height="22.1"
+          height="20.9"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="244.4"
-          y="759.2"
+          y="766.4"
           width="9.5"
-          height="62.8"
+          height="55.6"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="259.9"
-          y="669.7"
+          y="690.0"
           width="9.5"
-          height="152.3"
+          height="132.0"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="275.5"
-          y="751.0"
+          y="759.4"
           width="9.5"
-          height="71.0"
+          height="62.6"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="291.0"
-          y="661.5"
+          y="683.1"
           width="9.5"
-          height="160.5"
+          height="138.9"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="306.5"
-          y="596.4"
+          y="627.5"
           width="9.5"
-          height="225.6"
+          height="194.5"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="322.1"
-          y="629.0"
+          y="655.3"
           width="9.5"
-          height="193.0"
+          height="166.7"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="337.6"
-          y="791.7"
+          y="794.1"
           width="9.5"
-          height="30.3"
+          height="27.9"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="353.1"
-          y="742.9"
+          y="752.5"
           width="9.5"
-          height="79.1"
+          height="69.5"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="368.7"
-          y="637.1"
+          y="662.2"
           width="9.5"
-          height="184.9"
+          height="159.8"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="384.2"
-          y="596.4"
+          y="627.5"
           width="9.5"
-          height="225.6"
+          height="194.5"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="399.7"
-          y="620.8"
+          y="648.4"
           width="9.5"
-          height="201.2"
+          height="173.6"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="415.3"
-          y="572.0"
+          y="606.7"
           width="9.5"
-          height="250.0"
+          height="215.3"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="430.8"
-          y="677.8"
+          y="696.9"
           width="9.5"
-          height="144.2"
+          height="125.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="446.3"
-          y="685.9"
+          y="703.9"
           width="9.5"
-          height="136.1"
+          height="118.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="461.9"
-          y="572.0"
+          y="606.7"
           width="9.5"
-          height="250.0"
+          height="215.3"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="477.4"
-          y="718.5"
+          y="731.6"
           width="9.5"
-          height="103.5"
+          height="90.4"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="492.9"
-          y="637.1"
+          y="662.2"
           width="9.5"
-          height="184.9"
+          height="159.8"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="508.5"
-          y="612.7"
+          y="572.0"
           width="9.5"
-          height="209.3"
+          height="250.0"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    384
+    394
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    79% ABOVE XC
+    84% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -780,7 +780,7 @@
               x="58"
               dy="0"
             >
-              44% of recent commits arrive in
+              43% of recent commits arrive in
             </tspan>
 
             <tspan
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 50%
+          CAPTAIN · IN FORM · 48%
         </text>
 
         <line
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          RISING · 28%
+          RISING · 30%
         </text>
 
         <line
@@ -897,7 +897,7 @@
           x="486"
           y="1231"
         >
-          RISING · 20%
+          RISING · 19%
         </text>
 
   </g>
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    003.1
+    003.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
