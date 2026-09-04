@@ -7,16 +7,16 @@
   viewBox="0 0 1200 1480"
   role="img"
   aria-labelledby="title desc"
-  data-issue-date="2026-09-03"
-  data-issue-edition="2"
-  data-theme="dark"
+  data-issue-date="2026-09-04"
+  data-issue-edition="1"
+  data-theme="light"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 003.2, dark edition
+    Tobias Bleckert — Il Codice Sportivo, issue 004.1, light edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 394 contributions against 214.3 xC, 25 active days, a 25-day streak, recent form, and 17 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 401 contributions against 212.0 xC, 26 active days, a 26-day streak, recent form, and 17 active projects.
   </desc>
 
   <style>
@@ -28,53 +28,53 @@
         Helvetica,
         Arial,
         sans-serif;
-      fill: #f0f6fc;
+      fill: #1f2328;
     }
 
     .paper {
-      fill: #0d1117;
+      fill: #ffffff;
     }
 
     .crease {
-      stroke: #30363d;
+      stroke: #d0d7de;
       stroke-width: 2;
       opacity: 0.35;
     }
 
     .rule {
-      stroke: #8c959f;
+      stroke: #57606a;
       stroke-width: 3;
     }
 
     .fine-rule {
-      stroke: #30363d;
+      stroke: #d0d7de;
       stroke-width: 1;
     }
 
     .heavy-rule {
-      stroke: #8c959f;
+      stroke: #57606a;
       stroke-width: 7;
     }
 
     .bar {
-      fill: #f0f6fc;
+      fill: #1f2328;
     }
 
     .form-win {
-      fill: #f0f6fc;
-      stroke: #f0f6fc;
+      fill: #1f2328;
+      stroke: #1f2328;
       stroke-width: 2;
     }
 
     .form-draw {
       fill: none;
-      stroke: #f0f6fc;
+      stroke: #1f2328;
       stroke-width: 2;
     }
 
     .form-loss {
       fill: none;
-      stroke: #30363d;
+      stroke: #d0d7de;
       stroke-width: 2;
     }
 
@@ -141,7 +141,7 @@
     }
 
     .form-letter-win {
-      fill: #0d1117;
+      fill: #ffffff;
     }
 
     .column-title {
@@ -151,7 +151,7 @@
     }
 
     .squad-number {
-      fill: #f0f6fc;
+      fill: #1f2328;
       font-size: 20px;
     }
 
@@ -193,7 +193,7 @@
     x="58"
     y="61"
   >
-    THURSDAY 3 SEPTEMBER 2026
+    FRIDAY 4 SEPTEMBER 2026
   </text>
 
   <text
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 003.2 · LATE EDITION · 23:02
+    ISSUE 004.1 · MIDDAY EDITION · 14:01
   </text>
 
   <text
@@ -231,7 +231,7 @@
     x="58"
     y="315"
   >
-    <tspan x="58">Venticinque giorni</tspan>
+    <tspan x="58">Ventisei giorni</tspan>
     <tspan x="58" dy="70">senza fermarsi.</tspan>
   </text>
 
@@ -246,7 +246,7 @@
               x="58"
               dy="0"
             >
-              25 days unbeaten. TypeScript controls the
+              26 days unbeaten. TypeScript controls the
             </tspan>
 
             <tspan
@@ -309,87 +309,96 @@
         <rect
           class="bar"
           x="120.1"
-          y="817.0"
+          y="742.4"
           width="9.5"
-          height="5.0"
-          opacity="0.2"
+          height="79.6"
+          opacity="0.95"
         />
 
         <rect
           class="bar"
           x="135.7"
-          y="738.6"
+          y="696.6"
           width="9.5"
-          height="83.4"
+          height="125.4"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="151.2"
-          y="690.0"
+          y="781.8"
           width="9.5"
-          height="132.0"
+          height="40.2"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="166.7"
-          y="780.2"
+          y="735.9"
           width="9.5"
-          height="41.8"
+          height="86.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="182.3"
-          y="731.6"
+          y="703.1"
           width="9.5"
-          height="90.4"
+          height="118.9"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="197.8"
-          y="696.9"
+          y="781.8"
           width="9.5"
-          height="125.1"
+          height="40.2"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="213.3"
-          y="780.2"
+          y="801.4"
           width="9.5"
-          height="41.8"
+          height="20.6"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="228.9"
-          y="801.1"
+          y="768.7"
           width="9.5"
-          height="20.9"
+          height="53.3"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="244.4"
-          y="766.4"
+          y="696.6"
           width="9.5"
-          height="55.6"
+          height="125.4"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="259.9"
+          y="762.1"
+          width="9.5"
+          height="59.9"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="275.5"
           y="690.0"
           width="9.5"
           height="132.0"
@@ -398,145 +407,136 @@
 
         <rect
           class="bar"
-          x="275.5"
-          y="759.4"
-          width="9.5"
-          height="62.6"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
           x="291.0"
-          y="683.1"
+          y="637.6"
           width="9.5"
-          height="138.9"
+          height="184.4"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="306.5"
-          y="627.5"
+          y="663.8"
           width="9.5"
-          height="194.5"
+          height="158.2"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="322.1"
-          y="655.3"
+          y="794.9"
           width="9.5"
-          height="166.7"
+          height="27.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="337.6"
-          y="794.1"
+          y="755.6"
           width="9.5"
-          height="27.9"
+          height="66.4"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="353.1"
-          y="752.5"
+          y="670.3"
           width="9.5"
-          height="69.5"
+          height="151.7"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="368.7"
-          y="662.2"
+          y="637.6"
           width="9.5"
-          height="159.8"
+          height="184.4"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="384.2"
-          y="627.5"
+          y="657.2"
           width="9.5"
-          height="194.5"
+          height="164.8"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="399.7"
-          y="648.4"
+          y="617.9"
           width="9.5"
-          height="173.6"
+          height="204.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="415.3"
-          y="606.7"
+          y="703.1"
           width="9.5"
-          height="215.3"
+          height="118.9"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="430.8"
-          y="696.9"
+          y="709.7"
           width="9.5"
-          height="125.1"
+          height="112.3"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="446.3"
-          y="703.9"
+          y="617.9"
           width="9.5"
-          height="118.1"
+          height="204.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="461.9"
-          y="606.7"
+          y="735.9"
           width="9.5"
-          height="215.3"
+          height="86.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="477.4"
-          y="731.6"
+          y="670.3"
           width="9.5"
-          height="90.4"
+          height="151.7"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="492.9"
-          y="662.2"
+          y="572.0"
           width="9.5"
-          height="159.8"
+          height="250.0"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="508.5"
-          y="572.0"
+          y="775.2"
           width="9.5"
-          height="250.0"
+          height="46.8"
           opacity="0.95"
         />
 
@@ -560,7 +560,7 @@
     x="58"
     y="849"
   >
-    AUG 5
+    AUG 6
   </text>
 
   <text
@@ -569,11 +569,11 @@
     y="849"
     text-anchor="middle"
   >
-    AUG 20
+    AUG 21
   </text>
 
   <text class="graph-label" x="518" y="849" text-anchor="end">
-    SEP 3
+    SEP 4
   </text>
 
   <line class="heavy-rule" x1="835" y1="265" x2="1142" y2="265" />
@@ -587,29 +587,29 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    394
+    401
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
 
   <text class="score-label" x="835" y="458">xC · EXPECTED</text>
-  <text class="score-value" x="835" y="512">214.3</text>
+  <text class="score-value" x="835" y="512">212.0</text>
   <text
     class="score-detail"
     x="1142"
     y="509"
     text-anchor="end"
   >
-    84% ABOVE XC
+    89% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
 
   <text class="score-label" x="835" y="575">ACTIVE DAYS</text>
-  <text class="score-value" x="835" y="625">25</text>
+  <text class="score-value" x="835" y="625">26</text>
 
   <text class="score-label" x="1000" y="575">DAY STREAK</text>
-  <text class="score-value" x="1000" y="625">25</text>
+  <text class="score-value" x="1000" y="625">26</text>
 
   <line class="fine-rule" x1="835" y1="651" x2="1142" y2="651" />
 
@@ -627,7 +627,7 @@
 
         <g
           role="listitem"
-          aria-label="2026-08-29: W"
+          aria-label="2026-08-30: W"
         >
           <circle
             class="form-win"
@@ -648,7 +648,7 @@
 
         <g
           role="listitem"
-          aria-label="2026-08-30: W"
+          aria-label="2026-08-31: W"
         >
           <circle
             class="form-win"
@@ -669,7 +669,7 @@
 
         <g
           role="listitem"
-          aria-label="2026-08-31: W"
+          aria-label="2026-09-01: W"
         >
           <circle
             class="form-win"
@@ -690,7 +690,7 @@
 
         <g
           role="listitem"
-          aria-label="2026-09-01: W"
+          aria-label="2026-09-02: W"
         >
           <circle
             class="form-win"
@@ -711,7 +711,7 @@
 
         <g
           role="listitem"
-          aria-label="2026-09-02: W"
+          aria-label="2026-09-03: W"
         >
           <circle
             class="form-win"
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          RISING · 30%
+          RISING · 31%
         </text>
 
         <line
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    003.2
+    004.1
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    SECOND EDITION OF THE DAY
+    FIRST EDITION OF THE DAY
   </text>
 </svg>
