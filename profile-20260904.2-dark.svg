@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-09-04"
-  data-issue-edition="1"
+  data-issue-edition="2"
   data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 004.1, dark edition
+    Tobias Bleckert — Il Codice Sportivo, issue 004.2, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 401 contributions against 212.0 xC, 26 active days, a 26-day streak, recent form, and 17 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 405 contributions against 212.0 xC, 26 active days, a 26-day streak, recent form, and 17 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 004.1 · MIDDAY EDITION · 14:01
+    ISSUE 004.2 · LATE EDITION · 23:01
   </text>
 
   <text
@@ -534,9 +534,9 @@
         <rect
           class="bar"
           x="508.5"
-          y="775.2"
+          y="749.0"
           width="9.5"
-          height="46.8"
+          height="73.0"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    401
+    405
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    89% ABOVE XC
+    91% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 48%
+          CAPTAIN · IN FORM · 50%
         </text>
 
         <line
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          RISING · 31%
+          RISING · 29%
         </text>
 
         <line
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    004.1
+    004.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
