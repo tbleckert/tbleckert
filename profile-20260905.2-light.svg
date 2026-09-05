@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-09-05"
-  data-issue-edition="1"
+  data-issue-edition="2"
   data-theme="light"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 005.1, light edition
+    Tobias Bleckert — Il Codice Sportivo, issue 005.2, light edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 409 contributions against 207.0 xC, 27 active days, a 27-day streak, recent form, and 17 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 421 contributions against 207.0 xC, 27 active days, a 27-day streak, recent form, and 18 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 005.1 · MIDDAY EDITION · 14:00
+    ISSUE 005.2 · LATE EDITION · 23:01
   </text>
 
   <text
@@ -253,7 +253,7 @@
               x="58"
               dy="27"
             >
-              midfield as 17 projects compete for
+              midfield as 18 projects compete for
             </tspan>
 
             <tspan
@@ -525,18 +525,18 @@
         <rect
           class="bar"
           x="492.9"
-          y="729.3"
+          y="683.4"
           width="9.5"
-          height="92.7"
+          height="138.6"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="508.5"
-          y="801.4"
+          y="768.7"
           width="9.5"
-          height="20.6"
+          height="53.3"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    409
+    421
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    98% ABOVE XC
+    103% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -780,7 +780,7 @@
               x="58"
               dy="0"
             >
-              43% of recent commits arrive in
+              44% of recent commits arrive in
             </tspan>
 
             <tspan
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 50%
+          CAPTAIN · IN FORM · 49%
         </text>
 
         <line
@@ -915,7 +915,7 @@
               x="820"
               dy="0"
             >
-              13 behind closed
+              14 behind closed
             </tspan>
 
             <tspan
@@ -939,7 +939,7 @@
               x="820"
               dy="0"
             >
-              13 private projects and 4 public
+              14 private projects and 4 public
             </tspan>
 
             <tspan
@@ -953,7 +953,7 @@
               x="820"
               dy="29"
             >
-              17-player squad. Thursday wears
+              18-player squad. Friday wears
             </tspan>
 
             <tspan
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    005.1
+    005.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
