@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-09-09"
-  data-issue-edition="1"
+  data-issue-edition="2"
   data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 009.1, dark edition
+    Tobias Bleckert — Il Codice Sportivo, issue 009.2, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 453 contributions against 196.0 xC, 29 active days, a 30-day streak, recent form, and 17 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 454 contributions against 196.0 xC, 30 active days, a 31-day streak, recent form, and 17 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 009.1 · MORNING EDITION · 10:28
+    ISSUE 009.2 · MIDDAY EDITION · 14:01
   </text>
 
   <text
@@ -231,7 +231,7 @@
     x="58"
     y="315"
   >
-    <tspan x="58">Trenta giorni</tspan>
+    <tspan x="58">31 giorni</tspan>
     <tspan x="58" dy="70">senza fermarsi.</tspan>
   </text>
 
@@ -246,7 +246,7 @@
               x="58"
               dy="0"
             >
-              30 days unbeaten. TypeScript controls the
+              31 days unbeaten. TypeScript controls the
             </tspan>
 
             <tspan
@@ -534,10 +534,10 @@
         <rect
           class="bar"
           x="508.5"
-          y="817.0"
+          y="801.4"
           width="9.5"
-          height="5.0"
-          opacity="0.2"
+          height="20.6"
+          opacity="0.95"
         />
 
   </g>
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    453
+    454
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,16 +600,16 @@
     y="509"
     text-anchor="end"
   >
-    131% ABOVE XC
+    132% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
 
   <text class="score-label" x="835" y="575">ACTIVE DAYS</text>
-  <text class="score-value" x="835" y="625">29</text>
+  <text class="score-value" x="835" y="625">30</text>
 
   <text class="score-label" x="1000" y="575">DAY STREAK</text>
-  <text class="score-value" x="1000" y="625">30</text>
+  <text class="score-value" x="1000" y="625">31</text>
 
   <line class="fine-rule" x1="835" y1="651" x2="1142" y2="651" />
 
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    009.1
+    009.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
