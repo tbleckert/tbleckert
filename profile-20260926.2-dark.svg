@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-09-26"
-  data-issue-edition="1"
+  data-issue-edition="2"
   data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 026.1, dark edition
+    Tobias Bleckert — Il Codice Sportivo, issue 026.2, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 497 contributions against 211.3 xC, 30 active days, a 48-day streak, recent form, and 14 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 505 contributions against 211.3 xC, 30 active days, a 48-day streak, recent form, and 14 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 026.1 · MIDDAY EDITION · 14:00
+    ISSUE 026.2 · LATE EDITION · 23:00
   </text>
 
   <text
@@ -525,18 +525,18 @@
         <rect
           class="bar"
           x="492.9"
-          y="696.6"
+          y="690.0"
           width="9.5"
-          height="125.4"
+          height="132.0"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="508.5"
-          y="794.9"
+          y="749.0"
           width="9.5"
-          height="27.1"
+          height="73.0"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    497
+    505
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    135% ABOVE XC
+    139% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 37%
+          CAPTAIN · IN FORM · 38%
         </text>
 
         <line
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          RISING · 31%
+          RISING · 30%
         </text>
 
         <line
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    026.1
+    026.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
