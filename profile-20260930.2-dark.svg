@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-09-30"
-  data-issue-edition="1"
+  data-issue-edition="2"
   data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 030.1, dark edition
+    Tobias Bleckert — Il Codice Sportivo, issue 030.2, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 464 contributions against 239.7 xC, 30 active days, a 52-day streak, recent form, and 13 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 471 contributions against 239.7 xC, 30 active days, a 52-day streak, recent form, and 14 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 030.1 · MIDDAY EDITION · 14:01
+    ISSUE 030.2 · LATE EDITION · 23:01
   </text>
 
   <text
@@ -253,7 +253,7 @@
               x="58"
               dy="27"
             >
-              as 13 projects compete for Tobias’s
+              as 14 projects compete for Tobias’s
             </tspan>
 
             <tspan
@@ -534,9 +534,9 @@
         <rect
           class="bar"
           x="508.5"
-          y="788.3"
+          y="742.4"
           width="9.5"
-          height="33.7"
+          height="79.6"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    464
+    471
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    94% ABOVE XC
+    96% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 47%
+          CAPTAIN · IN FORM · 48%
         </text>
 
         <line
@@ -897,7 +897,7 @@
           x="486"
           y="1231"
         >
-          RISING · 24%
+          RISING · 23%
         </text>
 
   </g>
@@ -915,7 +915,7 @@
               x="820"
               dy="0"
             >
-              8 behind closed
+              9 behind closed
             </tspan>
 
             <tspan
@@ -939,7 +939,7 @@
               x="820"
               dy="0"
             >
-              8 private projects and 5 public
+              9 private projects and 5 public
             </tspan>
 
             <tspan
@@ -953,7 +953,7 @@
               x="820"
               dy="29"
             >
-              13-player squad. Thursday wears
+              14-player squad. Thursday wears
             </tspan>
 
             <tspan
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    030.1
+    030.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
