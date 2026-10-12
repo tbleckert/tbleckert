@@ -7,16 +7,16 @@
   viewBox="0 0 1200 1480"
   role="img"
   aria-labelledby="title desc"
-  data-issue-date="2026-10-12"
+  data-issue-date="2026-10-13"
   data-issue-edition="1"
-  data-theme="light"
+  data-theme="dark"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 012.1, light edition
+    Tobias Bleckert — Il Codice Sportivo, issue 013.1, dark edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 402 contributions against 266.7 xC, 30 active days, a 64-day streak, recent form, and 11 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 455 contributions against 266.7 xC, 30 active days, a 64-day streak, recent form, and 11 active projects.
   </desc>
 
   <style>
@@ -28,53 +28,53 @@
         Helvetica,
         Arial,
         sans-serif;
-      fill: #1f2328;
+      fill: #f0f6fc;
     }
 
     .paper {
-      fill: #ffffff;
+      fill: #0d1117;
     }
 
     .crease {
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 2;
       opacity: 0.35;
     }
 
     .rule {
-      stroke: #57606a;
+      stroke: #8c959f;
       stroke-width: 3;
     }
 
     .fine-rule {
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 1;
     }
 
     .heavy-rule {
-      stroke: #57606a;
+      stroke: #8c959f;
       stroke-width: 7;
     }
 
     .bar {
-      fill: #1f2328;
+      fill: #f0f6fc;
     }
 
     .form-win {
-      fill: #1f2328;
-      stroke: #1f2328;
+      fill: #f0f6fc;
+      stroke: #f0f6fc;
       stroke-width: 2;
     }
 
     .form-draw {
       fill: none;
-      stroke: #1f2328;
+      stroke: #f0f6fc;
       stroke-width: 2;
     }
 
     .form-loss {
       fill: none;
-      stroke: #d0d7de;
+      stroke: #30363d;
       stroke-width: 2;
     }
 
@@ -141,7 +141,7 @@
     }
 
     .form-letter-win {
-      fill: #ffffff;
+      fill: #0d1117;
     }
 
     .column-title {
@@ -151,7 +151,7 @@
     }
 
     .squad-number {
-      fill: #1f2328;
+      fill: #f0f6fc;
       font-size: 20px;
     }
 
@@ -193,7 +193,7 @@
     x="58"
     y="61"
   >
-    MONDAY 12 OCTOBER 2026
+    TUESDAY 13 OCTOBER 2026
   </text>
 
   <text
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 012.1 · MIDDAY EDITION · 14:03
+    ISSUE 013.1 · MORNING EDITION · 00:03
   </text>
 
   <text
@@ -273,69 +273,222 @@
         <rect
           class="bar"
           x="58.0"
-          y="699.1"
+          y="710.3"
           width="9.5"
-          height="122.9"
+          height="111.7"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="73.5"
-          y="662.8"
+          y="677.8"
           width="9.5"
-          height="159.2"
+          height="144.2"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="89.1"
-          y="590.2"
+          y="612.7"
           width="9.5"
-          height="231.8"
+          height="209.3"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="104.6"
-          y="708.2"
+          y="718.5"
           width="9.5"
-          height="113.8"
+          height="103.5"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="120.1"
-          y="671.8"
+          y="685.9"
           width="9.5"
-          height="150.2"
+          height="136.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="135.7"
-          y="671.8"
+          y="685.9"
           width="9.5"
-          height="150.2"
+          height="136.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="151.2"
-          y="744.5"
+          y="751.0"
           width="9.5"
-          height="77.5"
+          height="71.0"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="166.7"
+          y="596.4"
+          width="9.5"
+          height="225.6"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="182.3"
+          y="653.4"
+          width="9.5"
+          height="168.6"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="197.8"
+          y="685.9"
+          width="9.5"
+          height="136.1"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="213.3"
+          y="759.2"
+          width="9.5"
+          height="62.8"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="228.9"
+          y="645.2"
+          width="9.5"
+          height="176.8"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="244.4"
+          y="653.4"
+          width="9.5"
+          height="168.6"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="259.9"
+          y="694.1"
+          width="9.5"
+          height="127.9"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="275.5"
+          y="759.2"
+          width="9.5"
+          height="62.8"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="291.0"
+          y="645.2"
+          width="9.5"
+          height="176.8"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="306.5"
+          y="637.1"
+          width="9.5"
+          height="184.9"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="322.1"
+          y="580.1"
+          width="9.5"
+          height="241.9"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="337.6"
+          y="637.1"
+          width="9.5"
+          height="184.9"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="353.1"
+          y="710.3"
+          width="9.5"
+          height="111.7"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="368.7"
+          y="677.8"
+          width="9.5"
+          height="144.2"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="384.2"
+          y="726.6"
+          width="9.5"
+          height="95.4"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="399.7"
+          y="645.2"
+          width="9.5"
+          height="176.8"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="415.3"
+          y="718.5"
+          width="9.5"
+          height="103.5"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="430.8"
           y="572.0"
           width="9.5"
           height="250.0"
@@ -344,199 +497,46 @@
 
         <rect
           class="bar"
-          x="182.3"
-          y="635.5"
-          width="9.5"
-          height="186.5"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="197.8"
-          y="671.8"
-          width="9.5"
-          height="150.2"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="213.3"
-          y="753.5"
-          width="9.5"
-          height="68.5"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="228.9"
-          y="626.5"
-          width="9.5"
-          height="195.5"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="244.4"
-          y="635.5"
-          width="9.5"
-          height="186.5"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="259.9"
-          y="680.9"
-          width="9.5"
-          height="141.1"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="275.5"
-          y="753.5"
-          width="9.5"
-          height="68.5"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="291.0"
-          y="644.6"
-          width="9.5"
-          height="177.4"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="306.5"
-          y="635.5"
-          width="9.5"
-          height="186.5"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="322.1"
-          y="590.2"
-          width="9.5"
-          height="231.8"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="337.6"
-          y="644.6"
-          width="9.5"
-          height="177.4"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="353.1"
-          y="753.5"
-          width="9.5"
-          height="68.5"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="368.7"
-          y="708.2"
-          width="9.5"
-          height="113.8"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="384.2"
-          y="762.6"
-          width="9.5"
-          height="59.4"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="399.7"
-          y="671.8"
-          width="9.5"
-          height="150.2"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="415.3"
-          y="735.4"
-          width="9.5"
-          height="86.6"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="430.8"
-          y="626.5"
-          width="9.5"
-          height="195.5"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
           x="446.3"
-          y="744.5"
+          y="734.8"
           width="9.5"
-          height="77.5"
+          height="87.2"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="461.9"
-          y="744.5"
+          y="751.0"
           width="9.5"
-          height="77.5"
+          height="71.0"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="477.4"
-          y="735.4"
+          y="742.9"
           width="9.5"
-          height="86.6"
+          height="79.1"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="492.9"
-          y="726.3"
+          y="718.5"
           width="9.5"
-          height="95.7"
+          height="103.5"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="508.5"
-          y="789.8"
+          y="751.0"
           width="9.5"
-          height="32.2"
+          height="71.0"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    402
+    455
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    51% ABOVE XC
+    71% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -648,22 +648,22 @@
 
         <g
           role="listitem"
-          aria-label="2026-10-08: D"
+          aria-label="2026-10-08: W"
         >
           <circle
-            class="form-draw"
+            class="form-win"
             cx="913"
             cy="736"
             r="18"
           />
 
           <text
-            class="form-letter"
+            class="form-letter form-letter-win"
             x="913"
             y="741"
             text-anchor="middle"
           >
-            D
+            W
           </text>
         </g>
 
@@ -780,7 +780,7 @@
               x="58"
               dy="0"
             >
-              50% of recent commits arrive in
+              48% of recent commits arrive in
             </tspan>
 
             <tspan
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 67%
+          CAPTAIN · IN FORM · 58%
         </text>
 
         <line
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          ROTATING · 26%
+          ROTATING · 37%
         </text>
 
         <line
@@ -897,7 +897,7 @@
           x="486"
           y="1231"
         >
-          ROTATING · 4%
+          ROTATING · 3%
         </text>
 
   </g>
@@ -972,7 +972,7 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    012.1
+    013.1
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
