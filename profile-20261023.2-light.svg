@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-10-23"
-  data-issue-edition="1"
+  data-issue-edition="2"
   data-theme="light"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 023.1, light edition
+    Tobias Bleckert — Il Codice Sportivo, issue 023.2, light edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 481 contributions against 286.3 xC, 30 active days, a 75-day streak, recent form, and 10 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 494 contributions against 286.3 xC, 30 active days, a 75-day streak, recent form, and 10 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 023.1 · MIDDAY EDITION · 14:04
+    ISSUE 023.2 · LATE EDITION · 22:55
   </text>
 
   <text
@@ -525,18 +525,18 @@
         <rect
           class="bar"
           x="492.9"
-          y="668.9"
+          y="631.0"
           width="9.5"
-          height="153.1"
+          height="191.0"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="508.5"
-          y="799.6"
+          y="782.7"
           width="9.5"
-          height="22.4"
+          height="39.3"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    481
+    494
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    68% ABOVE XC
+    73% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -780,7 +780,7 @@
               x="58"
               dy="0"
             >
-              48% of recent commits arrive in
+              49% of recent commits arrive in
             </tspan>
 
             <tspan
@@ -833,7 +833,7 @@
           x="486"
           y="1043"
         >
-          CAPTAIN · IN FORM · 41%
+          CAPTAIN · IN FORM · 39%
         </text>
 
         <line
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          ROTATING · 35%
+          ROTATING · 37%
         </text>
 
         <line
@@ -897,7 +897,7 @@
           x="486"
           y="1231"
         >
-          RISING · 24%
+          RISING · 23%
         </text>
 
   </g>
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    023.1
+    023.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
