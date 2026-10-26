@@ -8,15 +8,15 @@
   role="img"
   aria-labelledby="title desc"
   data-issue-date="2026-10-26"
-  data-issue-edition="1"
+  data-issue-edition="2"
   data-theme="light"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 026.1, light edition
+    Tobias Bleckert — Il Codice Sportivo, issue 026.2, light edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 478 contributions against 305.3 xC, 30 active days, a 78-day streak, recent form, and 11 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 485 contributions against 305.3 xC, 30 active days, a 78-day streak, recent form, and 11 active projects.
   </desc>
 
   <style>
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 026.1 · MIDDAY EDITION · 13:01
+    ISSUE 026.2 · LATE EDITION · 21:58
   </text>
 
   <text
@@ -534,9 +534,9 @@
         <rect
           class="bar"
           x="508.5"
-          y="795.4"
+          y="765.9"
           width="9.5"
-          height="26.6"
+          height="56.1"
           opacity="0.95"
         />
 
@@ -587,7 +587,7 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    478
+    485
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
@@ -600,7 +600,7 @@
     y="509"
     text-anchor="end"
   >
-    57% ABOVE XC
+    59% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -780,7 +780,7 @@
               x="58"
               dy="0"
             >
-              48% of recent commits arrive in
+              47% of recent commits arrive in
             </tspan>
 
             <tspan
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          RISING · 33%
+          RISING · 32%
         </text>
 
         <line
@@ -897,7 +897,7 @@
           x="486"
           y="1231"
         >
-          RISING · 27%
+          RISING · 28%
         </text>
 
   </g>
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    026.1
+    026.2
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    FIRST EDITION OF THE DAY
+    SECOND EDITION OF THE DAY
   </text>
 </svg>
