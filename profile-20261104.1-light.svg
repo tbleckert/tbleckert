@@ -7,16 +7,16 @@
   viewBox="0 0 1200 1480"
   role="img"
   aria-labelledby="title desc"
-  data-issue-date="2026-11-03"
-  data-issue-edition="2"
+  data-issue-date="2026-11-04"
+  data-issue-edition="1"
   data-theme="light"
 >
   <title id="title">
-    Tobias Bleckert — Il Codice Sportivo, issue 003.2, light edition
+    Tobias Bleckert — Il Codice Sportivo, issue 004.1, light edition
   </title>
 
   <desc id="desc">
-    A sporting-paper profile with a footballer-coder illustration, 618 contributions against 343.7 xC, 30 active days, a 86-day streak, recent form, and 11 active projects.
+    A sporting-paper profile with a footballer-coder illustration, 607 contributions against 347.0 xC, 30 active days, a 87-day streak, recent form, and 11 active projects.
   </desc>
 
   <style>
@@ -193,7 +193,7 @@
     x="58"
     y="61"
   >
-    TUESDAY 3 NOVEMBER 2026
+    WEDNESDAY 4 NOVEMBER 2026
   </text>
 
   <text
@@ -202,7 +202,7 @@
     y="61"
     text-anchor="middle"
   >
-    ISSUE 003.2 · LATE EDITION · 21:59
+    ISSUE 004.1 · MIDDAY EDITION · 12:56
   </text>
 
   <text
@@ -231,7 +231,7 @@
     x="58"
     y="315"
   >
-    <tspan x="58">86 giorni</tspan>
+    <tspan x="58">87 giorni</tspan>
     <tspan x="58" dy="70">senza fermarsi.</tspan>
   </text>
 
@@ -246,7 +246,7 @@
               x="58"
               dy="0"
             >
-              86 days unbeaten. JavaScript controls the
+              87 days unbeaten. JavaScript controls the
             </tspan>
 
             <tspan
@@ -273,15 +273,6 @@
         <rect
           class="bar"
           x="58.0"
-          y="734.3"
-          width="9.5"
-          height="87.8"
-          opacity="0.95"
-        />
-
-        <rect
-          class="bar"
-          x="73.5"
           y="767.4"
           width="9.5"
           height="54.6"
@@ -290,7 +281,7 @@
 
         <rect
           class="bar"
-          x="89.1"
+          x="73.5"
           y="697.4"
           width="9.5"
           height="124.6"
@@ -299,7 +290,7 @@
 
         <rect
           class="bar"
-          x="104.6"
+          x="89.1"
           y="774.8"
           width="9.5"
           height="47.2"
@@ -308,7 +299,7 @@
 
         <rect
           class="bar"
-          x="120.1"
+          x="104.6"
           y="782.2"
           width="9.5"
           height="39.8"
@@ -317,7 +308,7 @@
 
         <rect
           class="bar"
-          x="135.7"
+          x="120.1"
           y="778.5"
           width="9.5"
           height="43.5"
@@ -326,7 +317,7 @@
 
         <rect
           class="bar"
-          x="151.2"
+          x="135.7"
           y="767.4"
           width="9.5"
           height="54.6"
@@ -335,7 +326,7 @@
 
         <rect
           class="bar"
-          x="166.7"
+          x="151.2"
           y="782.2"
           width="9.5"
           height="39.8"
@@ -344,7 +335,7 @@
 
         <rect
           class="bar"
-          x="182.3"
+          x="166.7"
           y="763.8"
           width="9.5"
           height="58.3"
@@ -353,7 +344,7 @@
 
         <rect
           class="bar"
-          x="197.8"
+          x="182.3"
           y="730.6"
           width="9.5"
           height="91.4"
@@ -362,7 +353,7 @@
 
         <rect
           class="bar"
-          x="213.3"
+          x="197.8"
           y="601.5"
           width="9.5"
           height="220.5"
@@ -371,7 +362,7 @@
 
         <rect
           class="bar"
-          x="228.9"
+          x="213.3"
           y="749.0"
           width="9.5"
           height="73.0"
@@ -380,7 +371,7 @@
 
         <rect
           class="bar"
-          x="244.4"
+          x="228.9"
           y="793.3"
           width="9.5"
           height="28.8"
@@ -389,7 +380,7 @@
 
         <rect
           class="bar"
-          x="259.9"
+          x="244.4"
           y="785.9"
           width="9.5"
           height="36.1"
@@ -398,7 +389,7 @@
 
         <rect
           class="bar"
-          x="275.5"
+          x="259.9"
           y="737.9"
           width="9.5"
           height="84.1"
@@ -407,7 +398,7 @@
 
         <rect
           class="bar"
-          x="291.0"
+          x="275.5"
           y="719.5"
           width="9.5"
           height="102.5"
@@ -416,7 +407,7 @@
 
         <rect
           class="bar"
-          x="306.5"
+          x="291.0"
           y="782.2"
           width="9.5"
           height="39.8"
@@ -425,7 +416,7 @@
 
         <rect
           class="bar"
-          x="322.1"
+          x="306.5"
           y="638.4"
           width="9.5"
           height="183.6"
@@ -434,7 +425,7 @@
 
         <rect
           class="bar"
-          x="337.6"
+          x="322.1"
           y="760.1"
           width="9.5"
           height="61.9"
@@ -443,7 +434,7 @@
 
         <rect
           class="bar"
-          x="353.1"
+          x="337.6"
           y="778.5"
           width="9.5"
           height="43.5"
@@ -452,7 +443,7 @@
 
         <rect
           class="bar"
-          x="368.7"
+          x="353.1"
           y="715.8"
           width="9.5"
           height="106.2"
@@ -461,7 +452,7 @@
 
         <rect
           class="bar"
-          x="384.2"
+          x="368.7"
           y="752.7"
           width="9.5"
           height="69.3"
@@ -470,7 +461,7 @@
 
         <rect
           class="bar"
-          x="399.7"
+          x="384.2"
           y="756.4"
           width="9.5"
           height="65.6"
@@ -479,7 +470,7 @@
 
         <rect
           class="bar"
-          x="415.3"
+          x="399.7"
           y="719.5"
           width="9.5"
           height="102.5"
@@ -488,7 +479,7 @@
 
         <rect
           class="bar"
-          x="430.8"
+          x="415.3"
           y="572.0"
           width="9.5"
           height="250.0"
@@ -497,7 +488,7 @@
 
         <rect
           class="bar"
-          x="446.3"
+          x="430.8"
           y="664.2"
           width="9.5"
           height="157.8"
@@ -506,7 +497,7 @@
 
         <rect
           class="bar"
-          x="461.9"
+          x="446.3"
           y="708.4"
           width="9.5"
           height="113.6"
@@ -515,7 +506,7 @@
 
         <rect
           class="bar"
-          x="477.4"
+          x="461.9"
           y="782.2"
           width="9.5"
           height="39.8"
@@ -524,19 +515,28 @@
 
         <rect
           class="bar"
-          x="492.9"
-          y="619.9"
+          x="477.4"
+          y="616.3"
           width="9.5"
-          height="202.1"
+          height="205.8"
+          opacity="0.95"
+        />
+
+        <rect
+          class="bar"
+          x="492.9"
+          y="723.2"
+          width="9.5"
+          height="98.8"
           opacity="0.95"
         />
 
         <rect
           class="bar"
           x="508.5"
-          y="745.3"
+          y="800.6"
           width="9.5"
-          height="76.7"
+          height="21.4"
           opacity="0.95"
         />
 
@@ -560,7 +560,7 @@
     x="58"
     y="849"
   >
-    OCT 5
+    OCT 6
   </text>
 
   <text
@@ -569,11 +569,11 @@
     y="849"
     text-anchor="middle"
   >
-    OCT 20
+    OCT 21
   </text>
 
   <text class="graph-label" x="518" y="849" text-anchor="end">
-    NOV 3
+    NOV 4
   </text>
 
   <line class="heavy-rule" x1="835" y1="265" x2="1142" y2="265" />
@@ -587,20 +587,20 @@
   </text>
 
   <text class="score-main" x="835" y="399">
-    618
+    607
   </text>
 
   <line class="fine-rule" x1="835" y1="424" x2="1142" y2="424" />
 
   <text class="score-label" x="835" y="458">xC · EXPECTED</text>
-  <text class="score-value" x="835" y="512">343.7</text>
+  <text class="score-value" x="835" y="512">347.0</text>
   <text
     class="score-detail"
     x="1142"
     y="509"
     text-anchor="end"
   >
-    80% ABOVE XC
+    75% ABOVE XC
   </text>
 
   <line class="fine-rule" x1="835" y1="540" x2="1142" y2="540" />
@@ -609,7 +609,7 @@
   <text class="score-value" x="835" y="625">30</text>
 
   <text class="score-label" x="1000" y="575">DAY STREAK</text>
-  <text class="score-value" x="1000" y="625">86</text>
+  <text class="score-value" x="1000" y="625">87</text>
 
   <line class="fine-rule" x1="835" y1="651" x2="1142" y2="651" />
 
@@ -627,7 +627,7 @@
 
         <g
           role="listitem"
-          aria-label="2026-10-29: W"
+          aria-label="2026-10-30: W"
         >
           <circle
             class="form-win"
@@ -648,7 +648,7 @@
 
         <g
           role="listitem"
-          aria-label="2026-10-30: W"
+          aria-label="2026-10-31: W"
         >
           <circle
             class="form-win"
@@ -669,39 +669,18 @@
 
         <g
           role="listitem"
-          aria-label="2026-10-31: W"
+          aria-label="2026-11-01: D"
         >
           <circle
-            class="form-win"
+            class="form-draw"
             cx="970"
             cy="736"
             r="18"
           />
 
           <text
-            class="form-letter form-letter-win"
-            x="970"
-            y="741"
-            text-anchor="middle"
-          >
-            W
-          </text>
-        </g>
-
-        <g
-          role="listitem"
-          aria-label="2026-11-01: D"
-        >
-          <circle
-            class="form-draw"
-            cx="1027"
-            cy="736"
-            r="18"
-          />
-
-          <text
             class="form-letter"
-            x="1027"
+            x="970"
             y="741"
             text-anchor="middle"
           >
@@ -712,6 +691,27 @@
         <g
           role="listitem"
           aria-label="2026-11-02: W"
+        >
+          <circle
+            class="form-win"
+            cx="1027"
+            cy="736"
+            r="18"
+          />
+
+          <text
+            class="form-letter form-letter-win"
+            x="1027"
+            y="741"
+            text-anchor="middle"
+          >
+            W
+          </text>
+        </g>
+
+        <g
+          role="listitem"
+          aria-label="2026-11-03: W"
         >
           <circle
             class="form-win"
@@ -865,7 +865,7 @@
           x="486"
           y="1137"
         >
-          ROTATING · 39%
+          ROTATING · 40%
         </text>
 
         <line
@@ -897,7 +897,7 @@
           x="486"
           y="1231"
         >
-          ROTATING · 7%
+          ROTATING · 6%
         </text>
 
   </g>
@@ -972,10 +972,10 @@
   <text class="footer-copy" x="58" y="1447">TOBIAS BLECKERT</text>
 
   <text class="footer-issue" x="600" y="1452" text-anchor="middle">
-    003.2
+    004.1
   </text>
 
   <text class="footer-copy" x="1142" y="1447" text-anchor="end">
-    SECOND EDITION OF THE DAY
+    FIRST EDITION OF THE DAY
   </text>
 </svg>
